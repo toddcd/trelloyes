@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import List from './List'
 import './App.css';
+import Messages from './Messages';
 
 class App extends Component {
+
     static defaultProps = {
         store: {
             lists: [],
@@ -29,6 +31,7 @@ class App extends Component {
             </main>
         );
     }
+
 }
 
 export default App;
