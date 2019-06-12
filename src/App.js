@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import List from './List'
 import './App.css';
-import Messages from './Messages';
+import TheDate from './state/TheDate';
+import Counter from './state/Counter';
 
 class App extends Component {
 
@@ -18,6 +19,8 @@ class App extends Component {
             <main className='App'>
                 <header className='App-header'>
                     <h1>Trelloyes!</h1>
+                    <Counter count={123} step={3}/>
+                    <TheDate />
                 </header>
                 <div className='App-list'>
                     {store.lists.map(list => (
